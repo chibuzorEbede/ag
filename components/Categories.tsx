@@ -68,7 +68,7 @@ export default Categories
 const CategoryItem = ({ title, count }) => {
     return (
         <Link href='/' className='category-item'>
-            <div className="flex justify-between">
+            <div className="flex justify-between mb-4">
                 <p className='font-light capitalize'>{title}</p>
                 <p className='count'>{count}</p>
             </div>

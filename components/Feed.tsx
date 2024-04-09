@@ -1,6 +1,6 @@
 import React from 'react'
 import FeedItem from '../components/FeedItem'
-import { log } from 'console'
+import Tab from '../components/common/Tab'
 
 let data = [
     {
@@ -93,14 +93,7 @@ const Feed = () => {
 
 export default Feed
 
-const clickHandler = () => { console.log('clicked') }
 
-let isActive = true;
 
-const Tab = () => {
-    return <div className='border-b-2 border-ag-green'>
-        <button className={`p-4` + isActive ? `bg-ag-green text-ag-gold` : `text-black-400`} onClick={() => clickHandler}>Recent questions</button>
-        <button>Recent answers</button>
-    </div >
-}
+
 

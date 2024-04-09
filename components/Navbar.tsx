@@ -10,11 +10,11 @@ const Navbar = function () {
 
       <Logo />
 
-      <div className="menu-btns flex gap-6 justify-center items-center invisible md:visible">
+      <div className="ml-auto menu-btns flex gap-6 justify-center items-center invisible md:visible">
         <Link href='/login'><ButtonFlat w={97} h={35} text={`login`} /></Link>
         <Link href='/signup'><Button text={`sign up`} /></Link>
       </div>
-      <div className="mobile-menu md:invisible">
+      <div className="mobile-menu md:hidden">
         <Button text='menu' />
       </div>
     </nav >
