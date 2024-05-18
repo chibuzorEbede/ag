@@ -23,7 +23,7 @@ const Navbar = function () {
           <Link href='/contact us'><ButtonFlat w={97} h={35} text={`contact us`} /></Link>
           <Link href='/signup'><Button text={`sign up`} /></Link>
         </div>
-        <div className="ml-2 md:ml-0 mobile-menu md:hidden">
+        <div className="ml-3 md:ml-0 mobile-menu md:hidden">
           <Button text='menu' onClick={menuHandler} />
         </div>
 
