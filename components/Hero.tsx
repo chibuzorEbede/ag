@@ -1,20 +1,18 @@
 import React from 'react'
-import Navbar from './Navbar'
 import Button from './common/Button'
 import Link from 'next/link'
 
 const Hero = () => {
     return (
-        <div className="hero p-4 bg-hero-pattern bg-no-repeat bg-cover h-[90vh] ">
-            <Navbar />
+        <div className="p-4 bg-hero-pattern3  bg-no-repeat bg-cover h-[70vh]">
 
-            <div className='flex flex-col justify-center items-center'>
-                <div className="hero-text mt-8">
-                    <p className='text-white font-bold text-center text-4xl md:text-[75px] leading-[60px] md:leading-loose uppercase drop-shadow-lg'>
-                        providing  <i className='text-ag-gold inline'>farmers</i> with reliable <i className='text-ag-gold inline'>solutions</i> to daily <i className='text-ag-gold underline inline'>farming</i> problems </p>
+            <div className='flex flex-col justify-center items-center pt-8'>
+                <div className="hero-text mt-8 p-2">
+                    <p className='text-white font-bold text-left md:text-center text-4xl md:text-[60px] leading-relaxed md:leading-loose uppercase drop-shadow-lg'>
+                        providing  <span className='md:text-ag-green inline'>farmers</span> with reliable <span className='text-ag-green inline'>solutions</span> to daily <span className='md:text-ag-green  inline'>farming</span> problems </p>
 
                 </div>
-                <div className="cta text-center mt-8">
+                <div className=" text-center mt-8">
                     <Link href='/ask'>
                         <Button text='ask a question' />
                     </Link>

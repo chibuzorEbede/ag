@@ -1,8 +1,11 @@
 import React from 'react'
+import LoginModal from '../components/LoginModal'
 
 const Login = () => {
     return (
-        <div>login</div>
+        <div>
+            <LoginModal />
+        </div>
     )
 }
 

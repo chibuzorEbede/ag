@@ -14,8 +14,9 @@ module.exports = {
         "3xl": "0px 0px 4px rgba(0, 0, 0, 0.25)",
       },
       backgroundImage: {
-        "hero-pattern": "url('/img/hero_banner.png')",
+        "hero-pattern": "url('/img/hero_banner.svg')",
         "hero-pattern2": "url('/img/ai.png')",
+        "hero-pattern3": "url('/img/hero.png')",
       },
       colors: {
         "ag-green": "#006400",
