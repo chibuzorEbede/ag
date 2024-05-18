@@ -6,7 +6,7 @@ import { useState } from "react"
 
 
 const Navbar = function () {
-  const [toggleMenu, setToggleMenu] = useState(true)
+  const [toggleMenu, setToggleMenu] = useState(false)
   const menuHandler = () => {
     setToggleMenu(!toggleMenu)
   }
