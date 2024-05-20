@@ -13,7 +13,8 @@ const Feed = () => {
                 <Tab />
             </>
             {
-                data.map((item) => <FeedItem key={item.id} category={item.category} img={item.img} name={item.name} date={item.date} title={item.title} content={item.content} comments={item.comments} views={item.views} likes={item.likes} />)
+                data.map((item) => <FeedItem key={item.id} data={item} />)
+
             }
 
         </main>
@@ -24,5 +25,5 @@ export default Feed
 
 
 
-
+// data.map((item) => <FeedItem key={item.id} category={item.category} img={item.img} name={item.name} date={item.date} title={item.title} content={item.content} comments={item.comments} views={item.views} likes={item.likes} />)
 

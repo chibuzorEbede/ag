@@ -4,14 +4,17 @@ import { BsFacebook, BsGoogle } from 'react-icons/bs'
 import Button from '../components/common/Button'
 import ButtonFlat from '../components/common/ButtonFlat'
 import Link from 'next/link'
+import { validateSignUp } from '../components/utils/form-validators'
 import Hr from '../components/common/Hr'
 
-const Login = () => {
+
+const SignUp = () => {
 
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
+    const [confirmPassword, setConfirmPassword] = useState('')
     const handleClick = () => {
-        console.log(email, password)
+        console.log(email, password, confirmPassword)
     }
     return (
         <div className="md:flex md:m-auto justify-center h-screen overflow-hidden">
@@ -19,13 +22,14 @@ const Login = () => {
 
                 <InputElement name={`email`} type={`email`} value={email} onChange={(e) => setEmail(e.target.value)} />
                 <InputElement name={`password`} type={`password`} value={password} onChange={(e) => setPassword(e.target.value)} />
-                <Button onClick={handleClick} text={`login`} />
+                <InputElement name={`confirm password`} type={`password`} value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} />
+                <Button onClick={handleClick} text={`next`} />
                 <Hr text={`or`} />
                 <LoginButton icon={<BsGoogle className='text-red-700' />} text={`continue with google`} />
                 <LoginButton icon={<BsFacebook className='text-blue-700' />} text={`continue with facebook`} />
                 <div className='flex items-center text-ag-green pt-8'>
-                    <p className='mr-4'>Don&apos;t have an account? </p>
-                    <Link href={`/auth/signup`}><ButtonFlat text={`signup`} w={'auto'} h={'auto'} /></Link>
+                    <p className='mr-4'>Already have an account? </p>
+                    <Link href={`/login`}><ButtonFlat text={`login`} w={'auto'} h={'auto'} /></Link>
                 </div>
             </div>
             <div className="right hidden md:block ">
@@ -63,4 +67,4 @@ const LoginButton = ({ text, icon }) => {
 
 
 
-export default Login
+export default SignUp

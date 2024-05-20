@@ -4,15 +4,15 @@ import Image from 'next/image'
 import { formatNumber } from '../components/utils/format';
 import { BsChat, BsEye, BsSuitHeart, BsBookmarkCheck, BsTwitter, BsFacebook, BsLinkedin } from "react-icons/bs";
 
-function FeedItem({ category, img, name, date, title, content, comments, views, likes }) {
-
+function FeedItem(props) {
+  const { category, img, name, date, title, content, comments, views, likes } = props.data
   let iconStyles = { color: "green", fontSize: "1em" }
   return <div className="feed-item rounded-lg p-3 flex flex-col shadow-3xl">
     <p className="category-text ml-auto text-xs capitalize text-[#615d5d7e]">{category}</p>
     <div className='feedbox md:flex flex-row'>
       <div className='upper'>
         <div className="user flex  items-end gap-2  py-2 md:flex-col md:pr-6 md:items-center">
-          <Image src={img} width={33} height={30} alt='user-image'></Image>
+          <Image src={img} width={33} height={30} style={{ width: 'auto', height: 'auto' }} alt='user-image'></Image>
           <p className="name capitalize text-[#615D5D] font-normal text-xs md:text-center">{name}</p>
           <p className="date text-xs text-[#615d5d83]">{date}</p>
         </div>

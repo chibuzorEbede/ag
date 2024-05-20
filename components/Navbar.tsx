@@ -5,10 +5,12 @@ import Link from "next/link"
 import { useState } from "react"
 
 
+
 const Navbar = function () {
   const [toggleMenu, setToggleMenu] = useState(false)
   const menuHandler = () => {
     setToggleMenu(!toggleMenu)
+
   }
   return (
 
@@ -29,7 +31,7 @@ const Navbar = function () {
 
       </nav >
       {toggleMenu && <div className="relative">
-        <MobileMenu />
+        <MobileMenu onClick={menuHandler} />
       </div>}
     </>
   )
@@ -39,12 +41,17 @@ const Navbar = function () {
 
 export default Navbar
 
-const MobileMenu = () => {
+const urlChange = () => {
+
+}
+
+const MobileMenu = ({ onClick }) => {
   return <menu className="absolute top-0 left-0 h-full w-full z-10">
-    <ul className="flex flex-col gap-4 bg-ag-green items-center justify-center p-4">
-      <Link href='/login'><ButtonFlat w={97} h={35} text={`login`} /></Link>
-      <Link href='/about'><ButtonFlat w={97} h={35} text={`about`} /></Link>
-      <Link href='/contact us'><ButtonFlat w={97} h={35} text={`contact us`} /></Link>
+    <ul className="flex flex-col gap-4 bg-ag-green  justify-center  p-4 ">
+      <Link onClick={onClick} href='/login'><ButtonFlat w={97} h={35} text={`login`} /></Link>
+      <Link onClick={onClick} href='/signup'><ButtonFlat w={97} h={35} text={`sign up`} /></Link>
+      <Link onClick={onClick} href='/about'><ButtonFlat w={97} h={35} text={`about`} /></Link>
+      <Link onClick={onClick} href='/contact us'><ButtonFlat w={97} h={35} text={`contact`} /></Link>
     </ul>
   </menu>
 }
