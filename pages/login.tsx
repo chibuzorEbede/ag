@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
-import LoginModal from '../components/LoginModal'
 import { BsFacebook, BsGoogle } from 'react-icons/bs'
 import Button from '../components/common/Button'
 import ButtonFlat from '../components/common/ButtonFlat'
 import Link from 'next/link'
 import Hr from '../components/common/Hr'
+import InputElement from '../components/common/InputElement'
 
 const Login = () => {
 
@@ -38,9 +38,9 @@ const Login = () => {
 
 
 
-const InputElement = ({ type, name, value, onChange }) => {
-    return <input onChange={onChange} className='rounded placeholder:text-ag-green p-4 bg-ag-gold text-ag-green font-extralight w-full' value={value} type={type} name={name} id={name} placeholder={name} />
-}
+// const InputElement = ({ type, name, value, onChange }) => {
+//     return <input onChange={onChange} className='rounded placeholder:text-ag-green p-3 bg-ag-gold text-ag-green font-extralight w-full' value={value} type={type} name={name} id={name} placeholder={name} />
+// }
 
 const LoginButton = ({ text, icon }) => {
     return <div className='flex items-center gap-3 p-4 border border-ag-gold rounded'>

@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
-import LoginModal from '../components/LoginModal'
 import { BsFacebook, BsGoogle } from 'react-icons/bs'
 import Button from '../components/common/Button'
 import ButtonFlat from '../components/common/ButtonFlat'
 import Link from 'next/link'
-import { validateSignUp } from '../components/utils/form-validators'
 import Hr from '../components/common/Hr'
+import InputElement from '../components/common/InputElement'
+import LoginButton from '../components/common/LoginButton'
 
 
 const SignUp = () => {
@@ -38,23 +38,6 @@ const SignUp = () => {
         </div>
     )
 }
-
-
-
-
-const InputElement = ({ type, name, value, onChange }) => {
-    return <input onChange={onChange} className='rounded placeholder:text-ag-green p-4 bg-ag-gold text-ag-green font-extralight w-full' value={value} type={type} name={name} id={name} placeholder={name} />
-}
-
-const LoginButton = ({ text, icon }) => {
-    return <div className='flex items-center gap-3 p-4 border border-ag-gold rounded'>
-        <div className='text-2xl'>{icon}</div>
-        <button className='capitalize text-center text-ag-green w-full '> {text}</button>
-    </div>
-}
-
-
-
 
 
 

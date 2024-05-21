@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Navbar from '../components/Navbar'
 import Image from 'next/image'
-import { formatNumber } from '../components/utils/format';
+import { formatNumber } from '../utils/format';
 import { BsChat, BsEye, BsSuitHeart, BsBookmarkCheck, BsTwitter, BsFacebook, BsLinkedin } from "react-icons/bs";
 
 function FeedItem(props) {
