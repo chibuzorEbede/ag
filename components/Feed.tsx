@@ -8,7 +8,7 @@ const Feed = () => {
 
     return (
 
-        <main className="feed p-4 grid gap-4 md:col-start-1 md:col-end-4">
+        <main className="feed p-4 grid gap-4 md:col-start-2 md:col-end-4">
             <>
                 <Tab />
             </>

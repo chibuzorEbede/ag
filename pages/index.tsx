@@ -11,6 +11,7 @@ const IndexPage = () => (
     <Hero />
     <SearchBar />
     <div className="grid md:grid-cols-4">
+      <div className="hidden md:block"><Categories /></div>
       <Feed />
       <Categories />
     </div>

@@ -16,7 +16,7 @@ function TabButton({ text }) {
     const [isActive, setIsActive] = useState(true)
     const clickHandler = () => setIsActive(!isActive)
 
-    return <button className={` rounded-lg shadow-3xl  text-ag-gold bg-ag-green mr-3 p-2 font-thin text-sm`
+    return <button className={` rounded-lg shadow-3xl  text-ag-gold bg-ag-green mr-3 p-2 font-light text-sm`
     } onClick={() => clickHandler()}> <p className='capitalize'>{text}</p></button >
 }
 
