@@ -1,3 +1,3 @@
-const useMobile = () => {
+export const useMobile = () => {
     return true
 }
