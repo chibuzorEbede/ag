@@ -20,7 +20,8 @@ module.exports = {
       },
       colors: {
         "ag-green": "#006400",
-        "ag-gold": "#DFC47D",
+        // "ag-gold": "#DFC47D",
+        "ag-gold": "#ffffff",
         "ag-black-100": "#615D5D",
       },
     },

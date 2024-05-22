@@ -41,11 +41,11 @@ const AboutPage = () => (
     </div>
     <div className='p-4'>
       {
-        aboutData.map((item) => <><Title text={item.text} /> <Body content={item.content} /></>)
+        aboutData.map((item) => <div key={item.id}><Title text={item.text} /> <Body content={item.content} /></div>)
       }
 
     </div>
-  </section>
+  </section >
 )
 
 export default AboutPage
