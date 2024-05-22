@@ -18,7 +18,7 @@ const Navbar = function () {
   return (
 
     <>
-      <nav className='flex justify-between items-center py-8 px-4 bg-ag-green'>
+      <nav className='flex justify-between items-center py-4 px-4 bg-ag-green'>
 
 
         <div className="md:hidden">

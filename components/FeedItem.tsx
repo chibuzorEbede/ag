@@ -19,7 +19,7 @@ function FeedItem(props) {
       </div>
       <div className='lower'>
         <div className="body">
-          <p className="title font-semibold text-medium text-black">{title}</p>
+          <p className="title font-semibold text-medium text-ag-green">{title}</p>
           <p className=" text-sm font-normal mt-1 mb-1 tracking-wider ">{content}</p>
         </div>
         <div className="spacer h-[.02rem]  bg-slate-200 w-full mt-2 mb-3"></div>
