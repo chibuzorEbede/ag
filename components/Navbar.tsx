@@ -1,8 +1,11 @@
 import Logo from "./common/Logo"
+import LogoMobile from "./common/LogoMobile"
 import Button from "./common/Button"
 import ButtonFlat from "./common/ButtonFlat"
 import Link from "next/link"
 import { useState } from "react"
+import { GiHamburgerMenu } from "react-icons/gi";
+
 
 
 
@@ -18,7 +21,12 @@ const Navbar = function () {
       <nav className='flex justify-between items-center py-8 px-4 bg-ag-green'>
 
 
-        <Logo />
+        <div className="md:hidden">
+          <LogoMobile />
+        </div>
+        <div className="hidden md:block">
+          <Logo />
+        </div>
         <div className="ml-auto menu-btns  gap-6 justify-center items-center hidden md:flex ">
           <Link href='/login'><ButtonFlat w={97} h={35} text={`login`} /></Link>
           <Link href='/about'><ButtonFlat w={97} h={35} text={`about`} /></Link>
@@ -26,7 +34,8 @@ const Navbar = function () {
           <Link href='/signup'><Button text={`sign up`} /></Link>
         </div>
         <div className="ml-3 md:ml-0 mobile-menu md:hidden">
-          <Button text='menu' onClick={menuHandler} />
+          {/* <Button text='menu' onClick={menuHandler} /> */}
+          <GiHamburgerMenu className="text-4xl text-ag-gold" onClick={menuHandler} />
         </div>
 
       </nav >

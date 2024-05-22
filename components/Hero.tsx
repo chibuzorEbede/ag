@@ -4,11 +4,11 @@ import Link from 'next/link'
 
 const Hero = () => {
     return (
-        <div className="p-4 bg-hero-pattern3  bg-no-repeat bg-cover md:min-h-[75vh]">
+        <div className="p-4 bg-hero-pattern3  bg-no-repeat bg-cover md:min-h-[90vh]">
 
-            <div className='flex flex-col justify-center items-center pt-8'>
+            <div className='flex flex-col justify-center items-center '>
                 <div className="hero-text mt-8 p-2">
-                    <p className='text-white font-bold text-left md:text-center text-4xl md:text-[60px] leading-relaxed md:leading-loose uppercase drop-shadow-lg'>
+                    <p className='text-ag-gold font-bold text-left md:text-center text-4xl md:text-[60px] leading-relaxed md:leading-loose uppercase drop-shadow-lg'>
                         providing  <span className='md:text-ag-green inline'>farmers</span> with reliable <span className='text-ag-green inline'>solutions</span> to daily <span className='md:text-ag-green  inline'>farming</span> problems </p>
 
                 </div>
@@ -24,3 +24,4 @@ const Hero = () => {
 }
 
 export default Hero
+
