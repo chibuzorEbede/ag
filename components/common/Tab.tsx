@@ -2,9 +2,9 @@ import { useState } from "react"
 const Tab = () => {
 
 
-    return <div className=''>
-        <TabButton text='recent questions' />
-        <TabButton text='recent answers' />
+    return <div className='flex gap-2'>
+        <TabButton text='Recent questions' />
+        <TabButton text='Recent answers' />
         {/* <TabButton text='topics' />
         <TabButton text='latest' /> */}
 
@@ -16,8 +16,8 @@ function TabButton({ text }) {
     const [isActive, setIsActive] = useState(true)
     const clickHandler = () => setIsActive(!isActive)
 
-    return <button className={` rounded-lg shadow-3xl  text-ag-gold bg-ag-green mr-3 p-2 font-light text-sm`
-    } onClick={() => clickHandler()}> <p className='capitalize'>{text}</p></button >
+    return <button className={` rounded-lg shadow-3xl  text-ag-gold bg-ag-green  p-3 font-light text-sm`
+    } onClick={() => clickHandler()}> <p className=''>{text}</p></button >
 }
 
 
