@@ -5,6 +5,7 @@ import ButtonFlat from '../components/common/ButtonFlat'
 import Link from 'next/link'
 import Hr from '../components/common/Hr'
 import InputElement from '../components/common/InputElement'
+import LoginButton from '../components/common/LoginButton'
 
 const Login = () => {
 
@@ -42,12 +43,7 @@ const Login = () => {
 //     return <input onChange={onChange} className='rounded placeholder:text-ag-green p-3 bg-ag-gold text-ag-green font-extralight w-full' value={value} type={type} name={name} id={name} placeholder={name} />
 // }
 
-const LoginButton = ({ text, icon }) => {
-    return <div className='flex items-center gap-3 p-4 border border-ag-gold rounded'>
-        <div className='text-2xl'>{icon}</div>
-        <button className='capitalize text-center text-ag-green w-full '> {text}</button>
-    </div>
-}
+
 
 
 
