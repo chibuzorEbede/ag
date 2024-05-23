@@ -25,7 +25,7 @@ const Login = () => {
                 <LoginButton icon={<BsFacebook className='text-blue-700' />} text={`continue with facebook`} />
                 <div className='flex items-center text-ag-green pt-8'>
                     <p className='mr-4'>Don&apos;t have an account? </p>
-                    <Link href={`/auth/signup`}><ButtonFlat text={`signup`} w={'auto'} h={'auto'} /></Link>
+                    <Link href={`/auth/signup`}><ButtonFlat text={`signup`} w={'auto'} h={'auto'} c='text-ag-green' /></Link>
                 </div>
             </div>
             <div className="right hidden md:block ">
