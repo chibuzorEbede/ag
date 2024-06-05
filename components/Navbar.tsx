@@ -30,7 +30,7 @@ const Navbar = function () {
         <div className="ml-auto menu-btns  gap-6 justify-center items-center hidden md:flex ">
           <Link href='/login'><ButtonFlat w={97} h={35} text={`login`} /></Link>
           <Link href='/about'><ButtonFlat w={97} h={35} text={`about`} /></Link>
-          <Link href='/contact us'><ButtonFlat w={97} h={35} text={`contact us`} /></Link>
+          <Link href='/contact'><ButtonFlat w={97} h={35} text={`contact us`} /></Link>
           <Link href='/signup'><Button text={`Sign up`} /></Link>
         </div>
         <div className="ml-3 md:ml-0 mobile-menu md:hidden">
@@ -60,7 +60,7 @@ const MobileMenu = ({ onClick }) => {
       <Link onClick={onClick} href='/login'><ButtonFlat w={97} h={35} text={`login`} /></Link>
       <Link onClick={onClick} href='/signup'><ButtonFlat w={97} h={35} text={`sign up`} /></Link>
       <Link onClick={onClick} href='/about'><ButtonFlat w={97} h={35} text={`about`} /></Link>
-      <Link onClick={onClick} href='/contact us'><ButtonFlat w={97} h={35} text={`contact`} /></Link>
+      <Link onClick={onClick} href='/contact'><ButtonFlat w={97} h={35} text={`contact`} /></Link>
     </ul>
   </menu>
 }

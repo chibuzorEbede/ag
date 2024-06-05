@@ -15,7 +15,7 @@ const Login = () => {
         console.log(email, password)
     }
     return (
-        <div className="md:flex md:m-auto justify-center h-screen overflow-hidden">
+        <div className="md:flex md:flex-row-reverse md:m-auto justify-center h-screen overflow-hidden">
             <div className="left p-8 flex flex-col gap-4 md:min-w-[50%] md:p-24">
 
                 <InputElement name={`email`} type={`email`} value={email} onChange={(e) => setEmail(e.target.value)} />

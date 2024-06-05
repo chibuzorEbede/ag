@@ -13,9 +13,9 @@ const Footer = () => {
       </div>
 
       <ul className="footer-links flex justify-between md:gap-8 mb-8">
-        <li className="link-item">Copyright {today}</li>
-        <li className="link-item">Contact us</li>
-        <li className="link-item">Terms & Conditions</li>
+        <li className="link-item"><Link href={`/`}>Copyright {today}</Link></li>
+        <li className="link-item"><Link href={`/contact`}>Contact us</Link></li>
+        <li className="link-item"><Link href={`/`}>Terms & Conditions</Link></li>
       </ul>
 
       <ul className="social-links flex gap-8">

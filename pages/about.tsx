@@ -35,11 +35,11 @@ const aboutData = [
 ]
 
 const AboutPage = () => (
-  <section>
-    <div className="h-64 overflow-hidden">
+  <section className='md:flex '>
+    <div className="h-64 overflow-hidden md:h-full md:w-[40%]  ">
       <Image src={`/img/boy_right.svg`} width={0} height={0} style={{ width: 'auto', height: 'auto' }} alt='picture of a boy on a farm' />
     </div>
-    <div className='p-4'>
+    <div className='p-4 md:w-[60%] '>
       {
         aboutData.map((item) => <div key={item.id}><Title text={item.text} /> <Body content={item.content} /></div>)
       }
